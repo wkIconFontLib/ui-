@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*字体大小定义*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+.g-button {
+  overflow: hidden;
+  border: 0;
+  box-sizing: border-box;
+  text-align: center; }
+
+.g-button.g-big-radius-button, .g-button.g-mid-radius-button, .g-button.g-small-radius-button {
+  border-radius: .1rem; }
+
+.g-button.g-big-button, .g-button.g-big-radius-button {
+  display: flex;
+  width: 7.5rem;
+  height: .9rem;
+  line-height: .9rem;
+  font-size: .3rem;
+  justify-content: center; }
+
+.g-button.g-mid-button, .g-button.g-mid-radius-button {
+  display: flex;
+  width: 6.7rem;
+  height: .9rem;
+  line-height: .9rem;
+  font-size: .3rem;
+  justify-content: center; }
+
+.g-button.g-small-button, .g-button.g-small-radius-button {
+  display: inline-flex;
+  padding: .13rem .21rem;
+  font-size: .24rem; }
+
+.g-button.g-three-button:after, .g-button.g-press-three-button:after {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  box-sizing: border-box; }
+
+.g-button.g-primary-button {
+  background-color: #cb1e1e;
+  color: #fff; }
+  .g-button.g-primary-button:active {
+    background-color: #f05757;
+    color: #fff; }
+.g-button.g-disabled-primary-button {
+  background-color: #c0c0c0;
+  color: #fff; }
+  .g-button.g-disabled-primary-button:active {
+    background-color: #c0c0c0;
+    color: #fff; }
+.g-button.g-second-button {
+  background-color: #f05757;
+  color: #fff; }
+.g-button.g-disabled-second-button {
+  background-color: #ccc;
+  color: #fff; }
+.g-button.g-three-button {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #999;
+  position: relative; }
+  .g-button.g-three-button:after {
+    border: 1px solid #999; }
+.g-button.g-press-three-button {
+  background-color: #fff;
+  color: #cb1e1e;
+  border: 1px solid #cb1e1e;
+  position: relative; }
+  .g-button.g-press-three-button:after {
+    border: 1px solid #999; }
+
+/*# sourceMappingURL=button.css.map */

@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*字体大小定义*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+html, body {
+  background-color: #f0f0f0; }
+
+.idx-banner {
+  width: 10rem;
+  height: 4.66667rem; }
+  .idx-banner img {
+    width: 100%;
+    height: 100%; }
+.idx-list {
+  margin-top: 0.26667rem;
+  padding-bottom: 0.26667rem;
+  background-color: #fff; }
+  .idx-list-title {
+    position: relative;
+    padding: 0.29333rem 0.4rem 0.16rem 0.4rem;
+    line-height: 1.5;
+    border-bottom: 1px solid #ccc;
+    color: #333; }
+    [data-dpr="1"] .idx-list-title {
+      font-size: 16px; }
+    [data-dpr="2"] .idx-list-title {
+      font-size: 32px; }
+    [data-dpr="3"] .idx-list-title {
+      font-size: 48px; }
+    .idx-list-title a {
+      position: absolute;
+      top: 0.29333rem;
+      right: 0.4rem;
+      color: #666; }
+  .idx-list-item-outer {
+    width: 4.93333rem;
+    padding-top: 0.4rem;
+    margin-right: 0.13333rem;
+    float: left; }
+    .idx-list-item-outer:nth-child(2n) {
+      margin-right: 0rem; }
+  .idx-list-item-inner img {
+    width: 4.93333rem;
+    height: 4.93333rem; }
+  .idx-list-item-inner p {
+    padding: 0.18667rem 0.21333rem 0.29333rem 0.25333rem;
+    line-height: 1.5;
+    color: #333; }
+    [data-dpr="1"] .idx-list-item-inner p {
+      font-size: 12px; }
+    [data-dpr="2"] .idx-list-item-inner p {
+      font-size: 24px; }
+    [data-dpr="3"] .idx-list-item-inner p {
+      font-size: 36px; }
+    .idx-list-item-inner p.price {
+      padding: 0rem 0.21333rem 0rem 0.25333rem;
+      line-height: 1.0;
+      color: #999; }
+      [data-dpr="1"] .idx-list-item-inner p.price {
+        font-size: 16px; }
+      [data-dpr="2"] .idx-list-item-inner p.price {
+        font-size: 32px; }
+      [data-dpr="3"] .idx-list-item-inner p.price {
+        font-size: 48px; }
+
+/*# sourceMappingURL=index.css.map */

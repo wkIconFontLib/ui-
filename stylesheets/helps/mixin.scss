@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/*字体大小定义*/
+@mixin fontDpr($font-size){
+  [data-dpr="1"] & {
+    font-size: $font-size / 2;
+  }
+  [data-dpr="2"] & {
+    font-size: $font-size;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size / 2 * 3;
+  }
+}
+@mixin px2rem($property,$px-values,$baseline-px:75,$support-for-ie:false){
+  //Conver the baseline into rems
+  $baseline-rem: $baseline-px / 1rem * 1;
+  //Print the first line in pixel values
+  @if $support-for-ie {
+    #{$property}: $px-values;
+  }
+  //if there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number"{
+    #{$property}: $px-values / $baseline-rem;
+  }
+  @else {
+    //Create an empty list that we can dump values into
+    $rem-values:();
+    @each $value in $px-values{
+      // If the value is zero or not a number, return it
+      @if $value == 0 or type-of($value) == "number"{
+        $rem-values: append($rem-values, $value / $baseline-rem);
+      }
+    }
+    // Return the property and its list of converted values
+    #{$property}: $rem-values;
+  }
+}
+@mixin px2px($property,$px-values) {
+  #{$property}: round($px-values / 2) * 1px;
+  [data-dpr="2"] & {
+    #{$property}: $px-values * 1px;
+  }
+  // for mx3
+  [data-dpr="2.5"] & {
+    #{$property}: round($px-values * 2.5 / 2) * 1px;
+  }
+  [data-dpr="2.625"] & {
+    #{$property}: round($px-values * 2.625 / 2) * 1px;
+  }
+  // for 小米note
+  [data-dpr="2.75"] & {
+    #{$property}: round($px-values * 2.75 / 2) * 1px;
+  }
+  [data-dpr="3"] & {
+    #{$property}: round($px-values / 2 * 3) * 1px
+  }
+  [data-dpr="3.5"] & {
+    #{$property}: round($px-values / 2 * 3.5) * 1px
+  }
+  // for 三星note4
+  [data-dpr="4"] & {
+    #{$property}: $px-values * 2px;
+  }
+}
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+@mixin borderRadius($topLeft:0.133333rem, $topRight:0.133333rem, $btmLeft:0.133333rem, $btmRight:0.133333rem) {
+  border-top-left-radius: $topLeft;
+  border-top-right-radius: $topRight;
+  border-bottom-left-radius: $btmLeft;
+  border-bottom-right-radius: $btmRight;
+}
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+@mixin displayFlex () {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+@mixin flex ($num:1) {
+  -webkit-box-flex:$num;
+  -webkit-flex:$num;
+          flex:$num;
+}

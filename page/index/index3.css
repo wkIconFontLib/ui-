@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*字体大小定义*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+html, body {
+  background-color: #f0f0f0; }
+
+.g-wrapper {
+  width: 750px; }
+
+.idx-banner {
+  width: 750px;
+  height: 350px; }
+  .idx-banner img {
+    width: 100%;
+    height: 100%; }
+.idx-list {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff; }
+  .idx-list-title {
+    position: relative;
+    padding: 22px 30px 12px 30px;
+    font-size: 32px;
+    line-height: 1.5;
+    border-bottom: 1px solid #ccc;
+    color: #333; }
+    .idx-list-title a {
+      position: absolute;
+      top: 22px;
+      right: 30px;
+      color: #666; }
+  .idx-list-item-outer {
+    width: 370px;
+    padding-top: 30px;
+    margin-right: 10px;
+    float: left; }
+    .idx-list-item-outer:nth-child(2n) {
+      margin-right: 0; }
+  .idx-list-item-inner img {
+    width: 370px;
+    height: 370px; }
+  .idx-list-item-inner p {
+    padding: 14px 16px 22px 19px;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #333; }
+    .idx-list-item-inner p.price {
+      padding: 0 16px 0 19px;
+      font-size: 32px;
+      line-height: 1.0;
+      color: #999; }
+
+/*# sourceMappingURL=index3.css.map */

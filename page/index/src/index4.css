@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*字体大小定义*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+html, body {
+  background-color: #f0f0f0; }
+
+.g-wrapper {
+  width: 100%; }
+
+.idx-banner {
+  width: 7.5rem;
+  height: 3.5rem; }
+  .idx-banner img {
+    width: 100%;
+    height: 100%; }
+.idx-list {
+  margin-top: .2rem;
+  padding-bottom: .2rem;
+  background-color: #fff; }
+  .idx-list-title {
+    position: relative;
+    padding: .22rem .3rem .12rem .3rem;
+    font-size: .32rem;
+    line-height: 1.5;
+    border-bottom: 1px solid #ccc;
+    color: #333; }
+    .idx-list-title a {
+      position: absolute;
+      top: .22rem;
+      right: .3rem;
+      color: #666; }
+  .idx-list-item-outer {
+    width: 3.7rem;
+    padding-top: .3rem;
+    margin-right: .1rem;
+    float: left; }
+    .idx-list-item-outer:nth-child(2n) {
+      margin-right: 0; }
+  .idx-list-item-inner img {
+    width: 3.7rem;
+    height: 3.7rem; }
+  .idx-list-item-inner p {
+    padding: .14rem .16rem .22rem .19rem;
+    font-size: .24rem;
+    line-height: 1.5;
+    color: #333; }
+    .idx-list-item-inner p.price {
+      padding: 0 .16rem 0 .19rem;
+      font-size: .32rem;
+      line-height: 1.0;
+      color: #999; }
+
+/*# sourceMappingURL=index4.css.map */

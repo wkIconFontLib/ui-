@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*字体大小定义*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+[data-dpr="1"] #app {
+  font-size: 6px; }
+[data-dpr="2"] #app {
+  font-size: 12px; }
+[data-dpr="3"] #app {
+  font-size: 18px; }
+
+[data-dpr="1"] h1 {
+  font-size: 10px; }
+[data-dpr="2"] h1 {
+  font-size: 20px; }
+[data-dpr="3"] h1 {
+  font-size: 30px; }
+
+/*# sourceMappingURL=search.css.map */
