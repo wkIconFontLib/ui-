@@ -22,7 +22,7 @@
  * @return {[type]}           [description]
  */
 html {
-  color: #000;
+  color: #333;
   background: #fff;
   overflow-y: scroll;
   -webkit-text-size-adjust: 100%;

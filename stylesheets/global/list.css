@@ -24,39 +24,40 @@
 .g-cells {
   position: relative;
   background-color: #fff; }
-  .g-cells .g-cell {
-    padding: .3rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    font-size: .28rem;
-    position: relative; }
-    .g-cells .g-cell:after {
-      content: ' ';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 7.5rem;
-      border-bottom: 1px solid #ccc;
-      -webkit-transform-origin: 0 100%;
-      transform-origin: 0 100%;
-      -webkit-transform: scaleY(0.5);
-      transform: scaleY(0.5); }
-    .g-cells .g-cell:last-child {
-      border: 0; }
-      .g-cells .g-cell:last-child:after {
-        border-bottom: 0; }
-    .g-cells .g-cell .g-cell-bd {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-      flex: 1;
-      color: #333;
-      text-align: left; }
-    .g-cells .g-cell .g-cell-ft {
-      color: #666;
-      text-align: right; }
-    .g-cells .g-cell-access .g-cell-ft i.icon-gengduo4 {
-      width: .18rem;
-      height: .32rem; }
+
+.g-cell {
+  padding: .3rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  font-size: .28rem;
+  position: relative; }
+  .g-cell:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 7.5rem;
+    border-bottom: 1px solid #ccc;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5); }
+  .g-cell:last-child {
+    border: 0; }
+    .g-cell:last-child:after {
+      border-bottom: 0; }
+  .g-cell .g-cell-bd {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    color: #333;
+    text-align: left; }
+  .g-cell .g-cell-ft {
+    color: #666;
+    text-align: right; }
+  .g-cell-access .g-cell-ft i.icon-gengduo4 {
+    width: .18rem;
+    height: .32rem; }
 
 /*# sourceMappingURL=list.css.map */

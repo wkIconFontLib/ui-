@@ -22,6 +22,9 @@
  * @return {[type]}           [description]
  */
 h1 {
-  font-size: 14px; }
+  font-size: .36rem;
+  font-weight: bold;
+  padding: .3rem;
+  text-align: center; }
 
 /*# sourceMappingURL=form.css.map */
