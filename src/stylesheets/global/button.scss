@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import '../themes/themes';
+@import '../helps/mixin';
+// 按钮
+%btnBaseStyle {
+  overflow:hidden;
+  border: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+%btnRadiusStyle {
+  border-radius: .1rem;
+}
+%btnBigStyle {
+  display: flex;
+  width: 7.5rem;
+  height: .9rem;
+  line-height: .9rem;
+  font-size: .3rem;
+  justify-content: center;
+}
+%btnMidStyle {
+  display: flex;
+  width: 6.7rem;
+  height: .9rem;
+  line-height: .9rem;
+  font-size: .3rem;
+  justify-content: center;
+}
+%btnSmallStyle {
+  display: inline-flex;
+  padding: .13rem .21rem;
+  font-size: .24rem;
+}
+%btnBorderAfter {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  box-sizing: border-box;
+}
+.g-button {
+  @extend %btnBaseStyle;
+  &.g-big-button {
+    @extend %btnBigStyle;
+  }
+  &.g-mid-button {
+    @extend %btnMidStyle;
+  }
+  &.g-small-button {
+    @extend %btnSmallStyle;
+  }
+  &.g-big-radius-button {
+    @extend %btnBigStyle;
+    @extend %btnRadiusStyle;
+  }
+  &.g-mid-radius-button {
+    @extend %btnMidStyle;
+    @extend %btnRadiusStyle;
+  }
+  &.g-small-radius-button {
+    @extend %btnSmallStyle;
+    @extend %btnRadiusStyle;
+  }
+  &.g-primary-button {
+    background-color: $btnDefaultBgPrimaryColor;
+    color: $btnDefaultFtPrimaryColor;
+    &:active {
+      background-color: $btnPressBgPrimaryColor;
+      color: $btnPressFtPrimaryColor;
+    }
+  }
+  &.g-disabled-primary-button {
+    background-color: $btnDisabledBgPrimaryColor;
+    color: $btnDisabledFtPrimaryColor;
+    &:active {
+      background-color: $btnDisabledBgPrimaryColor;
+      color: $btnDisabledFtPrimaryColor;
+    }
+  }
+  &.g-second-button {
+    background-color: $btnDefaultBgSecColor;
+    color: $btnDefaultFtSecColor;
+  }
+  &.g-disabled-second-button {
+    background-color: $btnDisabledBgSecColor;
+    color: $btnDisabledFtSecColor;
+  }
+
+  &.g-three-button {
+    background-color: $btnDefaultBdBgPrimaryColor;
+    color: $btnDefaultBdFtPrimaryColor;
+    border:1px solid $btnDefaultBdBdPrimaryColor;
+    position: relative;
+    &:after {
+      @extend %btnBorderAfter;
+      border: 1px solid $btnDefaultBdBdPrimaryColor;
+    }
+  }
+  &.g-press-three-button {
+    background-color: $btnPressBdBgPrimaryColor;
+    color: $btnPressBdFtPrimaryColor;
+    border:1px solid $btnPressBdBdPrimaryColor;
+    position: relative;
+    &:after {
+      @extend %btnBorderAfter;
+      border: 1px solid $btnDefaultBdBdPrimaryColor;
+    }
+  }
+
+}

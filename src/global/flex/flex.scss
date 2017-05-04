@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import '../../stylesheets/themes/themes';
+@import '../../stylesheets/helps/mixin';
+// flex
+%gCol {
+  background-color: $bgPrimaryColor;
+  font-size: .20rem;
+  text-align: center;
+  color: $fontSecColor;
+  padding: .20rem;
+}
+h1 {
+  font-size: .36rem;
+  font-weight: bold;
+  padding: .3rem;
+  text-align: center;
+}
+.g-row {
+  @for $i from 1 through 10 {
+    .g-col-#{$i} {
+      @extend %gCol;
+    }
+  }
+}

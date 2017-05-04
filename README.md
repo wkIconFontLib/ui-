@@ -20,91 +20,104 @@
       			
 ```
 .mcUILib                                        移动端UI组件库   
-└── global                                    基础组件  
-    └── button                                按钮
-        ├── button.html
-        ├── button.scss
-        ├── button.css
-        └── button.css.map  	
-    └── flex                                  弹性盒子
-        ├── flex.html                         
-      	├── flex.scss
-      	├── flex.css
-      	└── flex.css.map
-    └── form                                   表单
-            ├── form.html
+└── src                                   
+    └── global                                    基础组件  
+        └── button                                按钮
+            ├── button.html
+            ├── button.scss
+            ├── button.css
+            └── button.css.map  	
+        └── flex                                  弹性盒子
+            ├── flex.html                         
+            ├── flex.scss
+            ├── flex.css
+            └── flex.css.map
+        └── form                                   表单
+                ├── form.html
+                ├── form.scss
+                ├── form.css
+                └── form.css.map  
+        └── icon                                  图标
+                ├── iconFontclass.html
+                ├── iconSymbol.html
+                ├── iconUnicode.html
+                └── icon.css  
+        └── list                                   列表 
+                ├── list.html
+                ├── list.scss
+                ├── list.css
+                └── list.css.map    
+    └── images                                    图片/图标
+        ├── global                                全局图标/图片
+        └── modules                               电商组件（扩展组件）图片/图标
+            ├── header                            页头图片/图标
+            ├── footer                            页尾图片/图标
+            └── search 	                        搜索图片/图标
+    └── modules                                   电商组件（扩展组件）
+        └── header                                页头
+            ├── header.html
+            ├── header.scss
+            ├── header.css
+            └── header.css.map
+        └── footer                                页脚
+            ├── footer.html
+            ├── footer.scss
+            ├── footer.css
+            └── footer.css.map  	
+        └── search                                搜索
+            ├── search.html
+            ├── search.scss
+            ├── search.css
+            └── search.css.map  
+    └── stylesheets                               样式库
+        └── global                                全局样式/基础样式
+            ├── font
+            ├── base.scss
+            ├── base.css
+            ├── base.css.map
+            ├── button.scss
+            ├── button.css
+            ├── button.css.map
+            ├── flex.scss
+            ├── flex.css
+            ├── flex.css.map
             ├── form.scss
             ├── form.css
-            └── form.css.map  
-    └── icon                                  图标
-            ├── iconFontclass.html
-            ├── iconSymbol.html
-            ├── iconUnicode.html
-            └── icon.css  
-    └── list                                   列表 
-            ├── list.html
+            ├── form.css.map
+            ├── layout.scss
+            ├── layout.css
+            ├── layout.css.map
             ├── list.scss
             ├── list.css
-            └── list.css.map    
-└── images                                    图片/图标
-    ├── global                                全局图标/图片
-    └── modules                               电商组件（扩展组件）图片/图标
-     	├── header                            页头图片/图标
-     	├── footer                            页尾图片/图标
-        └── search 	                        搜索图片/图标
-└── modules                                   电商组件（扩展组件）
-    └── header                                页头
-        ├── header.html
-      	├── header.scss
-      	├── header.css
-      	└── header.css.map
-    └── footer                                页脚
-        ├── footer.html
-        ├── footer.scss
-        ├── footer.css
-        └── footer.css.map  	
-    └── search                                搜索
-        ├── search.html
-        ├── search.scss
-        ├── search.css
-        └── search.css.map  
-└── stylesheets                               样式库
-    └── global                                全局样式/基础样式
-        ├── font
-        ├── base.scss
-        ├── base.css
-        ├── base.css.map
-        ├── layout.scss
-        ├── layout.css
-        ├── layout.css.map
-        ├── reset.scss
-        ├── reset.css
-        └── reset.css.map  
-    └── helps                                 存放通用混合宏或变量
-        ├── mixin.scss
-        ├── mixin.css
-        └── mixin.css.map 
-    └── modules                               电商组件（扩展组件）核心样式库
-        ├── header.scss
-        ├── header.css
-        ├── header.css.map
-        ├── footer.scss
-        ├── footer.css
-        ├── footer.css.map  	
-        ├── search.scss
-        ├── search.css
-        └── search.css.map  
-    └── themes                                主体风格
-        ├── themes.scss
-        ├── themes.css
-        └── themes.css.map
-    └── vendors                               第三方样式库
-└── temp                                      临时图片，后续到项目中会直接删除的                                 
-    ├── global
-    └── modules 
-     	├── header
-     	├── footer
-        └── search                     
+            ├── list.css.map
+            ├── reset.scss
+            ├── reset.css
+            └── reset.css.map  
+        └── helps                                 存放通用混合宏或变量
+            ├── mixin.scss
+            ├── mixin.css
+            └── mixin.css.map 
+        └── modules                               电商组件（扩展组件）核心样式库
+            ├── header.scss
+            ├── header.css
+            ├── header.css.map
+            ├── footer.scss
+            ├── footer.css
+            ├── footer.css.map  	
+            ├── search.scss
+            ├── search.css
+            └── search.css.map  
+        └── themes                                主体风格
+            ├── themes.scss
+            ├── themes.css
+            └── themes.css.map
+        └── vendors                               第三方样式库
+    └── temp                                      临时图片，后续到项目中会直接删除的                                
+        ├── global
+        └── modules 
+            ├── header
+            ├── footer
+            └── search                     
 ```
 ## UI设计规范
 - 设计稿分辨率要求统一为750*1334

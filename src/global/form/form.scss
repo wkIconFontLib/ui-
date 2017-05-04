@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import '../../stylesheets/themes/themes';
+@import '../../stylesheets/helps/mixin';
+// 按钮
+h1 {
+  font-size: .36rem;
+  font-weight: bold;
+  padding: .3rem;
+  text-align: center;
+}
