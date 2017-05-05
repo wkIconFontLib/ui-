@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>搜索</title>
+    <title>首页</title>
     <meta charset="utf-8">
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="yes" name="apple-touch-fullscreen">
@@ -47,39 +47,45 @@
     <meta name="browsermode" content="application">
     <!-- QQ应用模式 -->
     <meta name="x5-page-mode" content="app">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement, resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize', recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+            };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
     <link rel="apple-touch-icon" href="favicon.png">
     <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
-    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
-    <link rel="stylesheet" type="text/css" href="../../stylesheets/global/base.css">
-    <link rel="stylesheet" type="text/css" href="../../stylesheets/modules/search.css">
-    <link rel="stylesheet" type="text/css" href="search.css">
+    <style>
+        #demo-device-ios {
+             width: 467px;
+             height: 800px;
+             background: center top no-repeat url(../temp/global/devices-sprite.jpg);
+             background-size: 467px;
+             margin: 0 auto;
+            position: relative;
+        }
+        #demo-ios {
+            display: block;
+            box-sizing: border-box;
+            width: 320px;
+            height: 568px;
+            position: absolute;
+            left: 50%;
+            top:85px;
+            margin-left: -160px;
+        }
+    </style>
 </head>
 <body>
-<!--code-->
-<h1>普通搜索框</h1>
-<input type="text" name="search" class="m-search" placeholder="输入商品/店铺名称">
-<h1>带搜索类型的搜索框</h1>
-<div class="m-search-outer">
-    <div class="m-search-inner">
-        <span class="m-search-type">店铺<i class="m-search-arrow"></i></span>
-        <input type="text" name="search" class="m-search" placeholder="输入商品/店铺名称">
-    </div>
+<div id="demo-device-ios">
+    <iframe id="demo-ios" src="index.html"frameborder="0"></iframe>
 </div>
-<h1>带取消按钮的搜索框</h1>
-<div class="m-search-outer">
-    <div class="m-search-inner">
-        <input type="text" name="search" class="m-search" placeholder="输入商品/店铺名称">
-    </div>
-    <a href="javascript:;" class="m-search-close">取消</a>
-</div>
-<h1>搜索二</h1>
-<div class="m-search-outer">
-    <div class="m-search-inner">
-        <span class="m-search-type">店铺<i class="m-search-arrow"></i></span>
-        <input type="text" name="search" class="m-search" placeholder="输入商品/店铺名称">
-    </div>
-    <a href="javascript:;" class="m-search-close">取消</a>
-</div>
-<!-- built files will be auto injected -->
 </body>
 </html>

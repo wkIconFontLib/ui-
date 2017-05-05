@@ -11,3 +11,6 @@ gulp.task('publish', function () {
       remotePath: '/usr/local/nginx/dptwx/mcUILib' // 饶商测试环境目录
     }));
 });
+
+// sass 打包编译
+

@@ -1,5 +1,20 @@
 # 移动端UI组件库
 - [在线地址](http://dptwx.irddtest.cn/mcUILib/page/index.html) 
+## 用法
+- 安装 npm install mc-ui-lib --save-dev
+- 全局引入 @import "~mc-ui-lib/src/stylesheets/global/base.css";
+```
+// base文件引入
+<style scoped lang="sass">
+  @import "~mc-ui-lib/src/stylesheets/global/base.css";
+</style>  
+// 主题风格及通用方法引入
+<style scoped lang="sass">
+  @import "~mc-ui-lib/src/stylesheets/themes/themes.scss";
+  @import "~mc-ui-lib/src/stylesheets/helps/mixin.scss";
+</style>
+```
+
 ## 技术选型
 - html5/html
 - css/css3

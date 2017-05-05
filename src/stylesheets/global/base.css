@@ -35,7 +35,9 @@ html * {
 
 html, body {
   font-family: sans-serif;
-  height: 100%; }
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden; }
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   margin: 0;
@@ -138,5 +140,637 @@ input {
 
 .clearfix:after, .hidden {
   visibility: hidden; }
+
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*字体大小定义*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+.g-button {
+  overflow: hidden;
+  border: 0;
+  box-sizing: border-box;
+  text-align: center; }
+
+.g-button.g-big-radius-button, .g-button.g-mid-radius-button, .g-button.g-small-radius-button {
+  border-radius: .1rem; }
+
+.g-button.g-big-button, .g-button.g-big-radius-button {
+  display: flex;
+  width: 7.5rem;
+  height: .9rem;
+  line-height: .9rem;
+  font-size: .3rem;
+  justify-content: center; }
+
+.g-button.g-mid-button, .g-button.g-mid-radius-button {
+  display: flex;
+  width: 6.7rem;
+  height: .9rem;
+  line-height: .9rem;
+  font-size: .3rem;
+  justify-content: center; }
+
+.g-button.g-small-button, .g-button.g-small-radius-button {
+  display: inline-flex;
+  padding: .13rem .21rem;
+  font-size: .24rem; }
+
+.g-button.g-three-button:after, .g-button.g-press-three-button:after {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  box-sizing: border-box; }
+
+.g-button.g-primary-button {
+  background-color: #cb1e1e;
+  color: #fff; }
+  .g-button.g-primary-button:active {
+    background-color: #f05757;
+    color: #fff; }
+.g-button.g-disabled-primary-button {
+  background-color: #c0c0c0;
+  color: #fff; }
+  .g-button.g-disabled-primary-button:active {
+    background-color: #c0c0c0;
+    color: #fff; }
+.g-button.g-second-button {
+  background-color: #f05757;
+  color: #fff; }
+.g-button.g-disabled-second-button {
+  background-color: #ccc;
+  color: #fff; }
+.g-button.g-three-button {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #999;
+  position: relative; }
+  .g-button.g-three-button:after {
+    border: 1px solid #999; }
+.g-button.g-press-three-button {
+  background-color: #fff;
+  color: #cb1e1e;
+  border: 1px solid #cb1e1e;
+  position: relative; }
+  .g-button.g-press-three-button:after {
+    border: 1px solid #999; }
+
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*字体大小定义*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+.g-row .g-col-1, .g-row .g-col-2, .g-row .g-col-3, .g-row .g-col-4, .g-row .g-col-5, .g-row .g-col-6, .g-row .g-col-7, .g-row .g-col-8, .g-row .g-col-9, .g-row .g-col-10 {
+  justify-content: space-between;
+  margin: 0 .15rem;
+  overflow: hidden; }
+
+.g-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin: .15rem; }
+  .g-row .g-col-1 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1; }
+  .g-row .g-col-2 {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+    flex: 2; }
+  .g-row .g-col-3 {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    flex: 3; }
+  .g-row .g-col-4 {
+    -webkit-box-flex: 4;
+    -webkit-flex: 4;
+    flex: 4; }
+  .g-row .g-col-5 {
+    -webkit-box-flex: 5;
+    -webkit-flex: 5;
+    flex: 5; }
+  .g-row .g-col-6 {
+    -webkit-box-flex: 6;
+    -webkit-flex: 6;
+    flex: 6; }
+  .g-row .g-col-7 {
+    -webkit-box-flex: 7;
+    -webkit-flex: 7;
+    flex: 7; }
+  .g-row .g-col-8 {
+    -webkit-box-flex: 8;
+    -webkit-flex: 8;
+    flex: 8; }
+  .g-row .g-col-9 {
+    -webkit-box-flex: 9;
+    -webkit-flex: 9;
+    flex: 9; }
+  .g-row .g-col-10 {
+    -webkit-box-flex: 10;
+    -webkit-flex: 10;
+    flex: 10; }
+
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*字体大小定义*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+/**
+ * [baseFormBtnStyle 设置开关按钮、单选按钮、多选按钮公共基础样式]
+ * @param  {[type]} $w  [description]
+ * @param  {[type]} $h  [description]
+ * @param  {[type]} $border  [description]
+ * @param  {[type]} $bgColor  [description]
+ * @param  {[type]} $borderRadius  [description]
+ * @return {[type]}           [description]
+ */
+.g-text {
+  border: 0;
+  padding: 0 0 0 .2rem;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: .28rem; }
+
+.g-cell-switch {
+  padding: .14rem .3rem; }
+  .g-cell-switch .g-cell-bd {
+    padding-top: .14rem;
+    padding-bottom: .14rem; }
+
+.g-switch {
+  appearance: none;
+  position: relative;
+  width: 1.02rem;
+  height: 0.6rem;
+  border: 2px solid #ccc;
+  outline: 0;
+  border-radius: 0.6rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: background-color .1s, border .1s; }
+  .g-switch:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 15px;
+    background-color: #fff;
+    transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1); }
+  .g-switch:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: .5rem;
+    height: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35); }
+  .g-switch:checked {
+    border-color: #cb1e1e;
+    background-color: #cb1e1e; }
+    .g-switch:checked:before {
+      transform: scale(0); }
+    .g-switch:checked:after {
+      transform: translateX(0.4rem); }
+
+.g-radio {
+  appearance: none;
+  position: relative;
+  width: 0.3rem;
+  height: 0.3rem;
+  border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: background-color .1s, border .1s; }
+  .g-radio:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1); }
+  .g-radio:checked {
+    border-color: #cb1e1e;
+    background-color: #cb1e1e; }
+    .g-radio:checked:before {
+      transform: scale(0); }
+    .g-radio:checked:after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 80%;
+      height: 40%;
+      margin-top: -30%;
+      margin-left: -40%;
+      border-left: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      box-sizing: border-box;
+      transform: rotate(-45deg); }
+
+.g-checkbox {
+  appearance: none;
+  position: relative;
+  width: 0.3rem;
+  height: 0.3rem;
+  border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: background-color .1s, border .1s; }
+  .g-checkbox:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1); }
+  .g-checkbox:checked {
+    border-color: #cb1e1e;
+    background-color: #cb1e1e; }
+    .g-checkbox:checked:before {
+      transform: scale(0); }
+    .g-checkbox:checked:after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 80%;
+      height: 40%;
+      margin-top: -30%;
+      margin-left: -40%;
+      border-left: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      box-sizing: border-box;
+      transform: rotate(-45deg); }
+
+.g-textArea {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  resize: none;
+  font-size: .28rem; }
+
+.g-textArea-counter {
+  text-align: right;
+  color: #999; }
+
+.g-cell-bd-textArea {
+  position: relative; }
+
+.g-textArea-del {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  background-color: #fff; }
+
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*字体大小定义*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+.g-cells {
+  position: relative;
+  background-color: #fff; }
+
+.g-cell {
+  padding: .3rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  font-size: .28rem;
+  position: relative; }
+  .g-cell:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5); }
+  .g-cell:last-child {
+    border: 0; }
+    .g-cell:last-child:after {
+      border-bottom: 0; }
+  .g-cell .g-cell-bd {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    color: #333;
+    text-align: left; }
+  .g-cell .g-cell-ft {
+    color: #666;
+    text-align: right; }
+  .g-cell-access .g-cell-ft i.icon-gengduo4 {
+    width: .18rem;
+    height: .32rem; }
+
+@font-face {
+  font-family: "iconfont";
+  src: url("iconfont.eot?t=1493192298909");
+  /* IE9*/
+  src: url("iconfont.eot?t=1493192298909#iefix") format("embedded-opentype"), url("iconfont.woff?t=1493192298909") format("woff"), url("iconfont.ttf?t=1493192298909") format("truetype"), url("iconfont.svg?t=1493192298909#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-fanhui:before {
+  content: "\e600"; }
+
+.icon-gengduo:before {
+  content: "\e601"; }
+
+.icon-dianhua:before {
+  content: "\e602"; }
+
+.icon-zhankai:before {
+  content: "\e633"; }
+
+.icon-guanbi:before {
+  content: "\e6a8"; }
+
+.icon-fuxuankuang:before {
+  content: "\e62f"; }
+
+.icon-quanbudingdan:before {
+  content: "\e645"; }
+
+.icon-shouye:before {
+  content: "\e611"; }
+
+.icon-llmainpageback:before {
+  content: "\e603"; }
+
+.icon-gengduo1:before {
+  content: "\e766"; }
+
+.icon-guanbi1:before {
+  content: "\e636"; }
+
+.icon-gengduo2:before {
+  content: "\e6ff"; }
+
+.icon-dianhua1:before {
+  content: "\e63f"; }
+
+.icon-gouwuche:before {
+  content: "\e662"; }
+
+.icon-shanchu:before {
+  content: "\e62b"; }
+
+.icon-gengduo3:before {
+  content: "\e606"; }
+
+.icon-mima:before {
+  content: "\e692"; }
+
+.icon-gouwuche1:before {
+  content: "\e60a"; }
+
+.icon-tianjia:before {
+  content: "\e61f"; }
+
+.icon-dizhi:before {
+  content: "\e67c"; }
+
+.icon-fenlei:before {
+  content: "\e604"; }
+
+.icon-search:before {
+  content: "\e605"; }
+
+.icon-sousuo:before {
+  content: "\e630"; }
+
+.icon-gengduo4:before {
+  content: "\e634"; }
+
+.icon-guanbi2:before {
+  content: "\e612"; }
+
+.icon-cshy-rmb2:before {
+  content: "\e62c"; }
+
+.icon-jingxuan:before {
+  content: "\e607"; }
+
+.icon-bianji:before {
+  content: "\e616"; }
+
+.icon-tianjia1:before {
+  content: "\e66d"; }
+
+.icon-fenlei1:before {
+  content: "\e613"; }
+
+.icon-fuxuankuang1:before {
+  content: "\e608"; }
+
+.icon-top:before {
+  content: "\e609"; }
+
+.icon-fenlei2:before {
+  content: "\e6ee"; }
+
+.icon-dianpu:before {
+  content: "\e647"; }
+
+.icon-fuwu:before {
+  content: "\e635"; }
+
+.icon-wuliu:before {
+  content: "\e60b"; }
+
+.icon-dangan:before {
+  content: "\e60c"; }
+
+.icon-fanhuidingbu:before {
+  content: "\e61c"; }
+
+.icon-gouwuche2:before {
+  content: "\e673"; }
+
+.icon-zhifubao:before {
+  content: "\e7da"; }
+
+.icon-liwu:before {
+  content: "\e60d"; }
+
+.icon-daifukuan:before {
+  content: "\e67d"; }
+
+.icon-danxuan:before {
+  content: "\e663"; }
+
+.icon-zhifubao1:before {
+  content: "\e60e"; }
+
+.icon-chenggong:before {
+  content: "\e84e"; }
+
+.icon-zhifubao2:before {
+  content: "\e60f"; }
+
+.icon-shouqi:before {
+  content: "\e674"; }
+
+.icon-shuoming1:before {
+  content: "\e631"; }
+
+.icon-daishouhuo-copy:before {
+  content: "\e610"; }
+
+.icon-asmkticon0253:before {
+  content: "\e80f"; }
+
+.icon-shangpin:before {
+  content: "\e646"; }
+
+.icon-tianjiatupian:before {
+  content: "\e6bc"; }
+
+.icon-shibai:before {
+  content: "\e65d"; }
+
+.icon-lianxi:before {
+  content: "\e649"; }
+
+.icon-huiyuan:before {
+  content: "\e614"; }
+
+.icon-chakangengduoicon:before {
+  content: "\e615"; }
+
+.icon-icon_lianxi:before {
+  content: "\e61a"; }
+
+.icon-chakangengduoicon1:before {
+  content: "\e73f"; }
+
+.icon-danxuankuang:before {
+  content: "\e6e1"; }
+
+.icon-shouye-shouye:before {
+  content: "\e617"; }
+
+.icon-gouwuchekong:before {
+  content: "\e668"; }
+
+.icon-wuliu1:before {
+  content: "\e74f"; }
+
+.icon-beizhu:before {
+  content: "\e6b2"; }
+
+.icon-date:before {
+  content: "\e619"; }
+
+.icon-beizhu1:before {
+  content: "\e618"; }
+
+.icon-activity_fill:before {
+  content: "\e6de"; }
+
+/*# sourceMappingURL=iconfont.css.map */
 
 /*# sourceMappingURL=base.css.map */

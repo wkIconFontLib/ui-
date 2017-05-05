@@ -21,5 +21,16 @@
  * @param  {[number]} $num  [默认值为1]
  * @return {[type]}           [description]
  */
+h1 {
+  font-size: .36rem;
+  font-weight: bold;
+  padding: .3rem;
+  text-align: center; }
 
-/*# sourceMappingURL=search.css.map */
+h2 {
+  font-size: .3rem;
+  font-weight: bold;
+  padding: .3rem;
+  text-align: left; }
+
+/*# sourceMappingURL=index.css.map */

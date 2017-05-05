@@ -1,9 +1,3 @@
 @charset "UTF-8";
 @import '../../stylesheets/themes/themes.scss';
 @import '../../stylesheets/helps/mixin.scss';
-#app {
-	@include fontDpr(12px);
-}
-h1 {
-	@include fontDpr(20px);
-}
