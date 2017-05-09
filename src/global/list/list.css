@@ -39,4 +39,34 @@ html, body {
 .g-cells .g-cell-hd i {
   margin-right: .1rem; }
 
+.m-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: .9rem;
+  box-sizing: border-box; }
+  .m-header h1 {
+    font-weight: 500;
+    font-size: .36rem;
+    padding: 0; }
+  .m-header a {
+    margin: 0; }
+
+.content {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-orient: vertical;
+  flex-direction: column; }
+  .content .main {
+    box-sizing: border-box;
+    padding-top: .9rem;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    height: 100%; }
+
 /*# sourceMappingURL=list.css.map */

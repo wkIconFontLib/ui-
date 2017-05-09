@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*字体大小定义*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+.m-header {
+  margin-bottom: .2rem; }
+
+/*# sourceMappingURL=header.css.map */

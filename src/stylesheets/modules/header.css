@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*字体大小定义*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+.m-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: .1rem .30rem;
+  background-color: #cb1e1e;
+  color: #fff;
+  font-size: .36rem;
+  text-align: center; }
+  .m-header a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    color: #fff; }
+    .m-header a i {
+      font-size: .6rem; }
+    .m-header a label {
+      font-size: .32rem;
+      line-height: .6rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+  .m-header-left, .m-header-right {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .m-header-left a {
+    justify-content: flex-start; }
+  .m-header-left i {
+    margin-left: -.12rem; }
+  .m-header-left label {
+    padding-right: .1rem; }
+  .m-header-right a {
+    justify-content: flex-end; }
+  .m-header-right label {
+    padding-left: .1rem; }
+  .m-header-title {
+    width: 4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: .36rem;
+    line-height: .6rem; }
+    .m-header-title-left {
+      text-align: left; }
+    .m-header-title-right {
+      text-align: right; }
+  .m-header.m-headerLeft .m-header-title {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: left; }
+  .m-header.m-headerLeft .m-header-left, .m-header.m-headerLeft .m-header-right {
+    -webkit-box-flex: inherit;
+    -webkit-flex: inherit;
+    flex: inherit; }
+
+/*# sourceMappingURL=header.css.map */

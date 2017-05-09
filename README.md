@@ -48,20 +48,20 @@
             ├── flex.css
             └── flex.css.map
         └── form                                   表单
-                ├── form.html
-                ├── form.scss
-                ├── form.css
-                └── form.css.map  
+            ├── form.html
+            ├── form.scss
+            ├── form.css
+            └── form.css.map  
         └── icon                                  图标
-                ├── iconFontclass.html
-                ├── iconSymbol.html
-                ├── iconUnicode.html
-                └── icon.css  
+            ├── iconFontclass.html
+            ├── iconSymbol.html
+            ├── iconUnicode.html
+            └── icon.css  
         └── list                                   列表 
-                ├── list.html
-                ├── list.scss
-                ├── list.css
-                └── list.css.map    
+            ├── list.html
+            ├── list.scss
+            ├── list.css
+            └── list.css.map    
     └── images                                    图片/图标
         ├── global                                全局图标/图片
         └── modules                               电商组件（扩展组件）图片/图标
@@ -74,11 +74,11 @@
             ├── header.scss
             ├── header.css
             └── header.css.map
-        └── footer                                页脚
-            ├── footer.html
-            ├── footer.scss
-            ├── footer.css
-            └── footer.css.map  	
+        └── tabBar                                标签栏
+            ├── tabBar.html
+            ├── tabBar.scss
+            ├── tabBar.css
+            └── tabBar.css.map  	
         └── search                                搜索
             ├── search.html
             ├── search.scss
@@ -116,9 +116,9 @@
             ├── header.scss
             ├── header.css
             ├── header.css.map
-            ├── footer.scss
-            ├── footer.css
-            ├── footer.css.map  	
+            ├── tabBar.scss
+            ├── tabBar.css
+            ├── tabBar.css.map  	
             ├── search.scss
             ├── search.css
             └── search.css.map  
@@ -131,7 +131,7 @@
         ├── global
         └── modules 
             ├── header
-            ├── footer
+            ├── tabBar
             └── search                     
 ```
 ## UI设计规范
