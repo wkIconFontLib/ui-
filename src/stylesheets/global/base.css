@@ -28,16 +28,15 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-html * {
+html, body {
   outline: 0;
   -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: transparent; }
-
-html, body {
+  -webkit-tap-highlight-color: transparent;
   font-family: sans-serif;
   height: 100%;
   overflow-y: auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-size: .24rem; }
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   margin: 0;
@@ -104,6 +103,16 @@ img {
 
 input {
   -webkit-appearance: none; }
+
+input:focus {
+  outline: none; }
+
+input[type="search"] {
+  -webkit-appearance: none; }
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none; }
 
 /*背景色*/
 /*线条颜色*/

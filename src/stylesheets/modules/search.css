@@ -21,5 +21,64 @@
  * @param  {[number]} $num  [默认值为1]
  * @return {[type]}           [description]
  */
+.m-search {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 5.5rem;
+  background-color: #fff;
+  height: 0.64rem;
+  border-radius: .1rem;
+  overflow: hidden; }
+  .m-search i {
+    font-size: .3rem;
+    line-height: 0.64rem;
+    padding-left: .2rem; }
+  .m-search input {
+    padding: 0 .1rem;
+    font-size: .24rem;
+    border: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1; }
+  .m-search-border {
+    box-sizing: border-box;
+    border: 1px solid #ccc; }
+    .m-search-border i {
+      padding-left: .1rem; }
+  .m-search-type {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0 .1rem;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    border-right: 1px solid #ccc; }
+    .m-search-type label {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      line-height: 0.64rem; }
+    .m-search-type i {
+      padding-left: 0; }
+  .m-search-outer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    position: relative; }
+  .m-search-close {
+    position: absolute;
+    top: .2rem;
+    right: .3rem;
+    color: #333; }
+  .m-search-btn {
+    width: 1.2rem;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    background-color: #cb1e1e;
+    color: #fff;
+    border: 0;
+    font-size: .26rem; }
 
 /*# sourceMappingURL=search.css.map */
