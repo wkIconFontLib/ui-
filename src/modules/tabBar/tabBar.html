@@ -64,27 +64,42 @@
     <link rel="apple-touch-icon" href="favicon.png">
     <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../stylesheets/global/base.css">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/modules/header.css">
     <link rel="stylesheet" type="text/css" href="../../stylesheets/modules/tabBar.css">
     <link rel="stylesheet" type="text/css" href="./tabBar.css">
 </head>
 <body>
-<div class="m-tabBar">
-    <a class="m-tabBar-item" href="javascript:;">
-        <i class="icon iconfont icon-shouye-shouye"></i>
-        <label>首页</label>
-    </a>
-    <a class="m-tabBar-item" href="javascript:;">
-        <i class="icon iconfont icon-fenlei"></i>
-        <label>分类</label>
-    </a>
-    <a class="m-tabBar-item" href="javascript:;">
-        <i class="icon iconfont icon-gouwuche2"></i>
-        <label>购物车</label>
-    </a>
-    <a class="m-tabBar-item m-tabBar-item-active" href="javascript:;">
-        <i class="icon iconfont icon-huiyuan"></i>
-        <label>我的</label>
-    </a>
+<div class="content">
+    <header class="m-header">
+        <div class="m-header-left">
+            <a href="../../page/index.html">
+                <i class="icon iconfont icon-fanhui"></i>
+                <label class="g-header-text">返回</label>
+            </a>
+        </div>
+        <h1 class="m-header-title">标签栏</h1>
+        <div class="m-header-right"></div>
+    </header>
+    <div class="main">
+        <div class="m-tabBar">
+            <a class="m-tabBar-item" href="javascript:;">
+                <i class="icon iconfont icon-shouye-shouye"></i>
+                <label>首页</label>
+            </a>
+            <a class="m-tabBar-item" href="javascript:;">
+                <i class="icon iconfont icon-fenlei"></i>
+                <label>分类</label>
+            </a>
+            <a class="m-tabBar-item" href="javascript:;">
+                <i class="icon iconfont icon-gouwuche2"></i>
+                <label>购物车</label>
+            </a>
+            <a class="m-tabBar-item m-tabBar-item-active" href="javascript:;">
+                <i class="icon iconfont icon-huiyuan"></i>
+                <label>我的</label>
+            </a>
+        </div>
+    </div>
 </div>
 <!--code-->
 <!-- built files will be auto injected -->
