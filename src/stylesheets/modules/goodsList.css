@@ -22,6 +22,10 @@
  * @return {[type]}           [description]
  */
 .m-goodsList-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin: .15rem;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap; }
 .m-goodsList-row .m-goodsList-col {

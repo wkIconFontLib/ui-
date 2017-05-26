@@ -3,6 +3,8 @@
 @import '../helps/mixin.scss';
 .m-goodsList {
   &-row {
+    @include displayFlex; 
+    margin: .15rem;
     -webkit-flex-wrap:wrap;
     flex-wrap:wrap;
   }
