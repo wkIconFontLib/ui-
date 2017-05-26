@@ -21,7 +21,6 @@
  * @param  {[number]} $num  [默认值为1]
  * @return {[type]}           [description]
  */
-@import url(iconfont.css);
 html {
   color: #333;
   background: #fff;
@@ -588,4 +587,4 @@ input::-webkit-search-cancel-button {
     width: .18rem;
     height: .32rem; }
 
-/*# sourceMappingURL=base.css.map */
+/*# sourceMappingURL=mobile-ui-lib.css.map */

@@ -20,7 +20,7 @@
   }
   &-item {
     @include flex();
-    padding: .07rem 0;
+    padding: .12rem 0;
     i, label {
       @include displayFlex;
       justify-content: center;

@@ -1,20 +1,32 @@
 # 移动端UI组件库
 - [在线地址](http://dptwx.irddtest.cn/mcUILib/page/index.html) 
 ## 用法
-- 安装 npm install mc-ui-lib --save-dev
-- 全局引入 @import "~mc-ui-lib/src/stylesheets/global/base.css";
+- 安装 npm install mobile-ui-lib --save-dev
+- 主题风格引入 @import "~mobile-ui-lib/src/stylesheets/themes/themes.scss";
+- mixin引入 @import "~mobile-ui-lib/src/stylesheets/helps/mixin.scss";
+- 全局引入 @import "~mobile-ui-lib/src/stylesheets/mobile-ui-lib.scss";
 ```
-// base文件引入
+// 全局引入基础模块
 <style scoped lang="sass">
-  @import "~mc-ui-lib/src/stylesheets/global/base.css";
+  @import "~mobile-ui-lib/src/stylesheets/mobile-ui-lib.scss";
 </style>  
-// 主题风格及通用方法引入
-<style scoped lang="sass">
-  @import "~mc-ui-lib/src/stylesheets/themes/themes.scss";
-  @import "~mc-ui-lib/src/stylesheets/helps/mixin.scss";
-</style>
 ```
-
+- 字体图标库引入 @import "~mobile-ui-lib/src/stylesheets/font/iconfont.scss";
+```
+// 入口文件 引入 字体图标库
+<script>
+  import 'mobile-ui-lib/src/stylesheets/global/iconfont.scss'
+</script> 
+```
+- 局部模块引入 @import "~mobile-ui-lib/src/stylesheets/modules/**.scss";
+```
+// 局部模块引入
+<script>
+  @import "~mobile-ui-lib/src/stylesheets/modules/header.scss";
+  @import "~mobile-ui-lib/src/stylesheets/modules/search.scss";
+  @import "~mobile-ui-lib/src/stylesheets/modules/tabBar.scss";
+</script> 
+```
 ## 技术选型
 - html5/html
 - css/css3

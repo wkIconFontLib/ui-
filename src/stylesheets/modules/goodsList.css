@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*字体大小定义*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+.m-goodsList-row {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
+.m-goodsList-row .m-goodsList-col {
+  -webkit-box-flex: initial;
+  -webkit-flex: initial;
+  flex: initial;
+  margin: .15rem; }
+.m-goodsList-item {
+  display: block;
+  width: 3.30rem;
+  background-color: #fff; }
+  .m-goodsList-item p {
+    padding: 0 .2rem;
+    line-height: .44rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+    .m-goodsList-item p:first-of-type {
+      padding-top: .1rem; }
+    .m-goodsList-item p:last-child {
+      padding-bottom: .1rem; }
+.m-goodsList-img {
+  width: 3.30rem;
+  height: 3.30rem; }
+.m-goodsList-title {
+  font-size: .26rem;
+  color: #333; }
+.m-goodsList-price {
+  font-size: .30rem;
+  color: #cb1e1e; }
+
+/*# sourceMappingURL=goodsList.css.map */

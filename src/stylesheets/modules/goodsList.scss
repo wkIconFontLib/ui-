@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import '../themes/themes.scss';
+@import '../helps/mixin.scss';
+.m-goodsList {
+  &-row {
+    -webkit-flex-wrap:wrap;
+    flex-wrap:wrap;
+  }
+  &-row &-col {
+    @include flex(initial);
+    margin: .15rem;
+  }
+  &-item {
+    display: block;
+    width: 3.30rem;
+    background-color: $bgSecColor;
+    p {
+      padding: 0 .2rem;
+      line-height: .44rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      &:first-of-type {
+        padding-top: .1rem;
+      }
+      &:last-child {
+        padding-bottom: .1rem;
+      }
+    }
+  }
+  &-img {
+    width: 3.30rem;
+    height: 3.30rem;
+  }
+  &-title {
+    font-size: .26rem;
+    color: $fontPrimaryColor;
+  }
+  &-price {
+    font-size: .30rem;
+    color: $fontFiveColor;
+  }
+}

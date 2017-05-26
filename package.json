@@ -1,8 +1,8 @@
 {
-  "name": "mc-ui-lib",
-  "version": "1.0.6",
+  "name": "mobile-ui-lib",
+  "version": "1.0.3",
   "description": "- [在线地址](http://dptwx.irddtest.cn/mcUILib/page/index.html) \r ## 技术选型\r - html5/html\r - css/css3\r - scss/sass\r ## 基础组件\r - 按钮（button）\r - 弹性盒子（flex）\r - 表单（form）\r - 图标（icon）\r - 列表（list）\r ## 电商组件（扩展组件）\r - 页头（header）\r - 页脚（footer）\r - 搜索（search）\r - 待扩展\r ## 目录结构",
-  "main": "",
+  "main": "index.js",
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
