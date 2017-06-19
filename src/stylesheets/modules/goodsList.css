@@ -21,14 +21,14 @@
  * @param  {[number]} $num  [默认值为1]
  * @return {[type]}           [description]
  */
-.m-goodsList-row {
+.m-goodsList-horizontal {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   margin: .15rem;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap; }
-.m-goodsList-row .m-goodsList-col {
+.m-goodsList-horizontal .m-goodsList-col {
   -webkit-box-flex: initial;
   -webkit-flex: initial;
   flex: initial;
@@ -47,14 +47,46 @@
       padding-top: .1rem; }
     .m-goodsList-item p:last-child {
       padding-bottom: .1rem; }
-.m-goodsList-img {
+.m-goodsList-horizontal .m-goodsList-img {
   width: 3.30rem;
   height: 3.30rem; }
+.m-goodsList-img {
+  width: 100%;
+  height: 100%; }
 .m-goodsList-title {
   font-size: .26rem;
   color: #333; }
 .m-goodsList-price {
   font-size: .30rem;
-  color: #cb1e1e; }
+  color: #27a366; }
+.m-goodsList-vertical .m-goodsList-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box; }
+.m-goodsList-vertical .m-goodsList-hd {
+  width: 1.8rem;
+  height: 1.8rem; }
+.m-goodsList-vertical .m-goodsList-bd {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1; }
+.m-goodsList-horizontal-two {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: .05rem 0; }
+.m-goodsList-horizontal-two .m-goodsList-col {
+  margin-top: .05rem;
+  margin-bottom: .05rem;
+  margin-right: .05rem; }
+  .m-goodsList-horizontal-two .m-goodsList-col:nth-child(2n) {
+    margin-left: .05rem;
+    margin-right: 0; }
+.m-goodsList-horizontal-two .m-goodsList-item {
+  width: 3.7rem; }
 
 /*# sourceMappingURL=goodsList.css.map */

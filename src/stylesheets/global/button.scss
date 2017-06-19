@@ -7,6 +7,7 @@
   border: 0;
   box-sizing: border-box;
   text-align: center;
+  outline: none;
 }
 %btnRadiusStyle {
   border-radius: .1rem;
@@ -14,16 +15,16 @@
 %btnBigStyle {
   display: flex;
   width: 7.5rem;
-  height: .9rem;
-  line-height: .9rem;
+  height: .8rem;
+  line-height: .8rem;
   font-size: .3rem;
   justify-content: center;
 }
 %btnMidStyle {
   display: flex;
   width: 6.7rem;
-  height: .9rem;
-  line-height: .9rem;
+  height: .8rem;
+  line-height: .8rem;
   font-size: .3rem;
   justify-content: center;
 }
@@ -72,7 +73,7 @@
     background-color: $btnDefaultBgPrimaryColor;
     color: $btnDefaultFtPrimaryColor;
     &:active {
-      background-color: $btnPressBgPrimaryColor;
+      // background-color: $btnPressBgPrimaryColor;
       color: $btnPressFtPrimaryColor;
     }
   }
@@ -103,7 +104,7 @@
       border: 1px solid $btnDefaultBdBdPrimaryColor;
     }
   }
-  &.g-press-three-button {
+  &.g-four-button {
     background-color: $btnPressBdBgPrimaryColor;
     color: $btnPressBdFtPrimaryColor;
     border:1px solid $btnPressBdBdPrimaryColor;
@@ -113,5 +114,32 @@
       border: 1px solid $btnDefaultBdBdPrimaryColor;
     }
   }
-
+  &.g-five-button {
+    background: -webkit-linear-gradient(right, #18aba3, #27a366); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #18aba3, #27a366); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #18aba3, #27a366); /* Firefox 3.6 - 15 */
+    background: linear-gradient(right, #18aba3, #27a366); /* 标准的语法 */
+    color: $btnDefaultFtPrimaryColor;
+    &:active {
+      color: $btnPressFtPrimaryColor;
+    }
+  }
+  &.g-disabled-five-button {
+    background-color: $btnDisabledBgPrimaryColor;
+    color: $btnDisabledFtPrimaryColor;
+    &:active {
+      background-color: $btnDisabledBgPrimaryColor;
+      color: $btnDisabledFtPrimaryColor;
+    }
+  }
+  &.g-six-button {
+    background-color: $btnPressBdBgPrimaryColor;
+    color: $btnDisabledBgSecColor;
+    border:1px solid $btnDisabledBgSecColor;
+    position: relative;
+    &:after {
+      @extend %btnBorderAfter;
+      border: 1px solid $btnDisabledBgSecColor;
+    }
+  }
 }

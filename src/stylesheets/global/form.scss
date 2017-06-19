@@ -10,7 +10,7 @@
  * @param  {[type]} $borderRadius  [description]
  * @return {[type]}           [description]
  */
-@mixin baseFormBtnStyle ($w:1.02rem, $h:.6rem, $border: 2px solid $linePrimaryColor, $bgColor: $bgSecColor, $borderRadius: .6rem) {
+@mixin baseFormBtnStyle ($w:1.02rem, $h:.6rem, $border: 2px solid $lineThreeColor, $bgColor: $bgSecColor, $borderRadius: .6rem) {
   appearance: none;
   position: relative;
   width: $w;
@@ -59,7 +59,10 @@
     left: 0;
     width: .5rem;
     height: .5rem;
-    border: 1px solid $linePrimaryColor;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 1px solid $lineThreeColor;
     border-radius: 15px;
     background-color: $bgSecColor;
     box-sizing: border-box;
@@ -73,13 +76,13 @@
       transform: scale(0);
     }
     &:after {
-      transform: translateX(.4rem);
+      transform: translateX(.45rem);
     }
   }
 }
 // 单选按钮
 .g-radio{
-  @include baseFormBtnStyle($w:.3rem, $h:.3rem,$border:1px solid $linePrimaryColor, $borderRadius:.3rem,$bgColor:$bgSecColor);
+  @include baseFormBtnStyle($w:.36rem, $h:.36rem,$border:1px solid $linePrimaryColor, $borderRadius:.3rem,$bgColor:$bgSecColor);
   &:before{
     content: " ";
     position: absolute;
@@ -102,8 +105,8 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 80%;
-      height: 40%;
+      width: 70%;
+      height: 35%;
       margin-top: -30%;
       margin-left: -40%;
       border-left: 1px solid $bgSecColor;
@@ -115,7 +118,7 @@
 }
 // 多选按钮
 .g-checkbox{
-  @include baseFormBtnStyle($w:.3rem, $h:.3rem,$border:1px solid $linePrimaryColor, $borderRadius:0,$bgColor:$bgSecColor);
+  @include baseFormBtnStyle($w:.24rem, $h:.24rem,$border:1px solid $lineFourColor, $borderRadius:2px,$bgColor:$bgSecColor);
   &:before{
     content: " ";
     position: absolute;
@@ -129,7 +132,8 @@
   }
   &:checked {
     border-color: $lineSecColor;
-    background-color: $lineSecColor;
+    color: $fontFiveColor;
+    // background-color: $lineSecColor;
     &:before {
       transform: scale(0);
     }
@@ -142,8 +146,8 @@
       height: 40%;
       margin-top: -30%;
       margin-left: -40%;
-      border-left: 1px solid $bgSecColor;
-      border-bottom: 1px solid $bgSecColor;
+      border-left: 1px solid $lineSecColor;
+      border-bottom: 1px solid $lineSecColor;
       box-sizing: border-box;
       transform:rotate(-45deg);
     }
